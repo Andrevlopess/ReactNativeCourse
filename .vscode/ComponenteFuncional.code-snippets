@@ -1,0 +1,16 @@
+{
+	"ComponenteFuncional": {
+		"scope": "javascript,typescript",
+		"prefix": "compFunc",
+		"body": [
+			"import React from 'react'",
+			"import {View} from 'react-native'",
+			"export props => {",
+			"return(",
+			"<View> </View>",
+	    	")",
+			"}",
+		],
+		"description": "Log output to console"
+	}
+}

@@ -1,10 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { useState } from "react";
+import { Button, StyleSheet, Text, View } from "react-native";
+import { Primeiro } from "./src/components/Primeiro";
 
 export default function App() {
+
+  const [count, setCount] = useState(0)
+
+  console.warn(count)
+
+  function somar(){
+    setCount(count + 1)
+  }
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>{count}</Text>
+      <Button onPress={somar} title="Somar"/>
+       
+
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +26,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
