@@ -1,25 +1,20 @@
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
+import { Button, StyleSheet, Text, View, SafeAreaView} from "react-native";
+import DigiteSeuNome from "./src/components/Inputs/DigiteSeuNome";
+import FlatList from "./src/components/lista/FlatList";
 import { Primeiro } from "./src/components/Primeiro";
 
 export default function App() {
 
-  const [count, setCount] = useState(0)
-
-  console.warn(count)
-
-  function somar(){
-    setCount(count + 1)
-  }
+  
+  
   return (
-    <View style={styles.container}>
-      <Text>{count}</Text>
-      <Button onPress={somar} title="Somar"/>
-       
-
+    <SafeAreaView style={styles.container}>
+     {/* <FlatList/> */}
+     <DigiteSeuNome/>
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
 
