@@ -5,6 +5,7 @@ import DigiteSeuNome from "./src/components/Inputs/DigiteSeuNome";
 import FlexBoxV1 from "./src/components/layout/FlexBoxV1";
 import Quadrado from "./src/components/layout/Quadrado";
 import FlatList from "./src/components/lista/FlatList";
+import Mega from "./src/components/mega/Mega";
 import { Primeiro } from "./src/components/Primeiro";
 
 export default function App() {
@@ -16,7 +17,8 @@ export default function App() {
      {/* <FlatList/> */}
      {/* <DigiteSeuNome/> */}
      {/* <Quadrado/> */}
-     <FlexBoxV1/>
+     {/* <FlexBoxV1/> */}
+     <Mega numbers={7}/>
       <StatusBar style="auto" />
     </SafeAreaView>
   );
